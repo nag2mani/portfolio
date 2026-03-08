@@ -1,0 +1,44 @@
+/* ==================== GLOBAL STYLES ==================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.portfolio {
+  background: #0f172a;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(71, 85, 105, 0.4);
+}
+
+.main-content {
+  padding-top: 80px;
+}
+
+/* ==================== ANIMATIONS ==================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

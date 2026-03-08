@@ -1,0 +1,342 @@
+/* ==================== ABOUT SECTION ==================== */
+
+.about {
+  padding: 96px 24px;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: block;
+  width: 100%;
+}
+
+/* Text Container */
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.about-text-container h2 {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0;
+  text-align: center;
+}
+
+.about-bio {
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.8;
+  color: #cbd5e0;
+  margin: 0;
+}
+
+.about-bio.highlight {
+  color: #cbd5e0;
+}
+
+.accent-text {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.about-bio a.accent-text {
+  color: #64748b;
+  text-decoration: underline;
+}
+
+.about-bio a.accent-text:hover {
+  color: #94a3b8;
+}
+
+/* Tabs Navigation */
+.tabs-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 16px;
+  margin: 16px 0;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: clamp(13px, 1.5vw, 16px);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.tab-btn:hover {
+  color: #e2e8f0;
+}
+
+.tab-btn.active {
+  color: #94a3b8;
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #64748b;
+}
+
+/* Skills Content */
+.skills-content,
+.education-content,
+.certifications-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-category {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: baseline;
+}
+
+/* Skill cards – same style as education */
+.skill-card {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.skill-card h4 {
+  font-size: clamp(12px, 1.5vw, 14px);
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.skill-card p {
+  font-size: clamp(13px, 1.5vw, 14px);
+  color: #cbd5e0;
+  margin: 0;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+/* Education Content */
+.education-item {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.education-item h4 {
+  font-size: clamp(14px, 1.8vw, 16px);
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0 0 8px 0;
+}
+
+.education-item p {
+  font-size: clamp(13px, 1.5vw, 14px);
+  color: #cbd5e0;
+  margin: 0;
+}
+
+.education-item .institution {
+  color: #94a3b8;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.education-item .year {
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+/* Achievements / Certifications – cards like education */
+.certifications-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.achievement-card {
+  padding: clamp(12px, 2vw, 16px);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  font-size: clamp(14px, 1.8vw, 15px);
+  line-height: 1.55;
+}
+
+.achievement-card strong {
+  color: #f1f5f9;
+  font-weight: 700;
+}
+
+/* Extracurricular Activities – cards like achievements */
+.extracurricular-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.activity-card {
+  padding: clamp(12px, 2vw, 16px);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  font-size: clamp(14px, 1.8vw, 15px);
+  line-height: 1.55;
+}
+
+.activity-card strong {
+  color: #f1f5f9;
+  font-weight: 700;
+}
+
+.certification-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.certification-list li {
+  color: #e2e8f0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.certification-list strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.certification-list span {
+  color: #94a3b8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 64px 20px;
+  }
+
+  .about-container {
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+  .about-text-container {
+    gap: 20px;
+  }
+
+  .about-text-container h2 {
+    font-size: 28px;
+  }
+
+  .about-bio {
+    font-size: 14px;
+  }
+
+  .tabs-navigation {
+    gap: 10px 16px;
+    padding-bottom: 12px;
+  }
+
+  .tab-btn {
+    font-size: 14px;
+  }
+
+  .skill-card,
+  .education-item,
+  .achievement-card,
+  .activity-card {
+    padding: 14px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .about {
+    padding: 48px 16px;
+  }
+
+  .about-container {
+    padding: 0;
+  }
+
+  .about-text-container {
+    gap: 16px;
+  }
+
+  .about-text-container h2 {
+    font-size: 24px;
+  }
+
+  .about-bio {
+    font-size: 13px;
+  }
+
+  .tabs-navigation {
+    gap: 8px 12px;
+    padding-bottom: 12px;
+    margin: 12px 0;
+  }
+
+  .tab-btn {
+    font-size: 13px;
+  }
+
+  .tab-btn.active::after {
+    bottom: -12px;
+  }
+
+  .skills-content,
+  .education-content,
+  .certifications-content,
+  .extracurricular-content {
+    gap: 14px;
+  }
+
+  .skill-card,
+  .education-item,
+  .achievement-card,
+  .activity-card {
+    padding: 12px;
+  }
+}

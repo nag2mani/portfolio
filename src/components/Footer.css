@@ -1,0 +1,30 @@
+/* ==================== FOOTER ==================== */
+
+.footer {
+  padding: 48px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-email {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-email:hover {
+  color: #e2e8f0;
+}
+
+.footer h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}

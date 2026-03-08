@@ -1,0 +1,142 @@
+/* ==================== EXPERIENCE SECTION ==================== */
+
+.experience {
+  padding: 96px 24px;
+}
+
+.experience-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.experience h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.exp-icon {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* 2x2 grid of experience cards */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.experience-card {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+
+.experience-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0;
+  width: 100%;
+}
+
+.experience-header .company {
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.exp-date {
+  color: #64748b;
+  font-size: 13px;
+  margin-left: auto;
+}
+
+.exp-points {
+  color: #cbd5e0;
+  line-height: 1.75;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.exp-points li {
+  margin-bottom: 8px;
+}
+
+.exp-points li:last-child {
+  margin-bottom: 0;
+}
+
+.experience-block {
+  max-width: 920px;
+  margin-bottom: 48px;
+}
+
+.experience-block:last-child {
+  margin-bottom: 0;
+}
+
+.experience-lines {
+  max-width: 920px;
+}
+
+.experience-lines h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0 0 8px;
+}
+
+.company {
+  color: #cbd5e0;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+
+.experience-lines p {
+  color: #cbd5e0;
+  line-height: 1.85;
+  margin: 0 0 12px;
+}
+
+.exp-point {
+  position: relative;
+  padding-left: 18px;
+}
+
+.exp-point::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.highlight {
+  color: white;
+  font-weight: 600;
+}
