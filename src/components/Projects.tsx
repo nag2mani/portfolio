@@ -37,6 +37,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
         </div>
       </div>
       <p>{project.description}</p>
+
       {project.points && project.points.length > 0 && (
         <ul className="project-points">
           {project.points.map((point, i) => (
@@ -44,6 +45,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
           ))}
         </ul>
       )}
+
       <div className="project-tags">
         {project.tags.map((tag, tagIndex) => (
           <span key={tagIndex} className="tech-tag">{tag}</span>
@@ -58,56 +60,66 @@ const Projects: React.FC = () => {
     {
       title: 'Reporting Engine for Large Data',
       repoUrl: 'https://github.com/nag2mani/ReportingEngine-for-LargeData',
-      description: 'Scalable reporting engine handling millions of records with multi-tenant isolation and fine-grained RBAC.',
+      description:
+        'Scalable reporting engine designed to process large-scale datasets with tenant isolation and role-based access.',
       points: [
-        'Implemented real-time dashboard reports with caching and optimized queries for high-performance analytics.',
+        'Built a multi-tenant reporting engine capable of processing millions of records using optimized PostgreSQL queries and Redis caching.',
+        'Designed RBAC-secured analytics dashboards using NestJS services and containerized deployment via Docker and Kubernetes.',
       ],
-      tags: ['NestJS', 'TypeScript', 'PostgreSQL', 'Redis', 'TypeORM', 'React', 'Docker', 'Kubernetes'],
+      tags: ['NestJS', 'PostgreSQL', 'Redis', 'TypeORM', 'Docker', 'Kubernetes'],
     },
     {
       title: 'PowerPoint Generator',
       repoUrl: 'https://github.com/nag2mani/PowerPointGenerator',
-      description: 'API-based system to generate PPTX presentations from user inputs (topic, slide count, user-defined content).',
+      description:
+        'API-driven platform that generates PowerPoint presentations automatically from user inputs.',
       points: [
-        'Designed modular REST endpoints for presentation creation, retrieval, configuration, and download.',
+        'Developed a FastAPI service that generates structured PPTX presentations from user prompts using Google Gemini for AI-powered content generation.',
+        'Implemented modular REST APIs for slide creation, customization, and automated download using python-pptx.',
       ],
-      tags: ['Python', 'FastAPI', 'Google Gemini API', 'python-pptx', 'HTML/CSS', 'JavaScript'],
+      tags: ['Python', 'FastAPI', 'Google Gemini API', 'python-pptx', 'HTML/CSS', 'JS/TS'],
     },
     {
       title: 'Search Engine Implementation',
       repoUrl: 'https://github.com/nag2mani/SearchEngines_and_InformationRetrieval/tree/main/search_engine',
-      description: 'Search engine from scratch using web scraping, indexing, and ranking. Built tf-idf weighted vectors and computed pairwise cosine similarity to rank documents.',
-      tags: ['Python', 'NumPy', 'Pandas', 'Web Scraping', 'N-grams', 'SimHash', 'Information Retrieval'],
+      description:
+        'End-to-end search engine built from scratch including crawling, indexing, and ranking algorithms.',
+      points: [
+        'Implemented a document indexing pipeline using TF-IDF vectorization to represent and rank documents efficiently.',
+        'Applied cosine similarity and SimHash techniques for accurate ranking and near-duplicate detection.',
+      ],
+      tags: ['Python', 'NumPy', 'Pandas', 'Web Scraping', 'N-grams', 'SimHash', 'IR'],
     },
     {
       title: 'Coding Profile Tracker',
       repoUrl: 'https://github.com/nag2mani/CodingProfileTracker',
-      description: 'Flask web app for analyzing the coding profiles of Sitare University students. Tracks rankings, problems solved, and categorizes solutions by difficulty level.',
+      description:
+        'Web application for tracking coding performance of Sitare University students.',
       points: [
-        'Presents the data on a visually appealing dashboard for easy comparison and insights.',
+        'Built a Flask-based analytics dashboard that tracks rankings, problems solved, and difficulty distribution.',
+        'Designed visual insights to compare student performance and highlight progress trends.',
       ],
       tags: ['Python', 'Flask', 'Dashboard', 'Data Visualization'],
     },
     {
       title: 'BiteBase',
       repoUrl: 'https://github.com/nag2mani/BiteBase',
-      description: 'Comprehensive platform that aggregates real-time data from various sources: hackathons and coding contests, job listings, and curated tech news with summaries.',
+      description:
+        'Platform aggregating global hackathons, coding contests, job listings, and summarized tech news.',
       points: [
-        'Scrapes and stores hackathon and contest data from multiple websites worldwide.',
-        'Collects job listings from diverse sources for easy browsing.',
-        'Uses a machine learning model for content processing and summarization.',
+        'Developed automated scrapers to collect hackathons, contests, and job listings from multiple global sources.',
+        'Integrated ML-based summarization to convert long-form tech news into concise insights.',
       ],
-      tags: ['HTML5', 'CSS', 'Bootstrap', 'JavaScript', 'Python', 'Django', 'SQLite', 'Machine Learning'],
+      tags: ['HTML', 'Bootstrap', 'JavaScript', 'Python', 'Django', 'SQLite', 'ML'],
     },
     {
       title: 'ChurnInsightHub',
       repoUrl: 'https://github.com/nag2mani/ChurnInsightHub',
-      liveUrl: 'https://churninsighthub.onrender.com',
-      description: 'Customer churn prediction platform that helps businesses anticipate customer departures and retain valuable customers with actionable insights.',
+      description:
+        'Machine learning platform that predicts customer churn and provides retention insights.',
       points: [
-        'Churn Prediction: Advanced algorithms to forecast churn and enable targeted retention strategies.',
-        'Customer Longevity: Nurture long-term relationships by understanding needs and behaviors.',
-        'Customer Engagement: Personalized communication and targeted campaigns for higher satisfaction.',
+        'Built a churn prediction pipeline using machine learning models trained on customer behavioral data.',
+        'Delivered actionable dashboards through Django that help businesses identify at-risk customers and plan retention strategies.',
       ],
       tags: ['Python', 'Django', 'Machine Learning', 'Data Analysis', 'Render'],
     },

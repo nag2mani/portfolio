@@ -37,7 +37,9 @@ const Hero: React.FC = () => {
         <div className="hero-text">
           <div className="availability">
             <span className="ping-dot"></span>
-            SDE at Indihood
+            <span className="availability-label">
+              Software Developer @ Indihood
+            </span>
           </div>
 
           <h1>
@@ -47,8 +49,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p>
-            B.Tech CSE @ Sitare University | Building scalable systems and full-stack applications. 
-            Former intern at MeshWorks & Beans.ai.
+            Building scalable systems and full-stack applications. Former SDE intern at Palo Alto based startup Beans.ai & MeshWorks.
           </p>
 
           <div className="hero-buttons">

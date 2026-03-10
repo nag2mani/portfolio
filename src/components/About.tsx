@@ -7,23 +7,23 @@ const About: React.FC = () => {
   const techStack = [
     {
       category: 'Programming Languages',
-      skills: ['Python', 'Java', 'Dart', 'TypeScript'],
+      skills: ['Python', 'Java', 'TypeScript', 'Dart'],
     },
     {
-      category: 'DevOps & Cloud',
-      skills: ['Docker', 'Kubernetes', 'Google Cloud Platform', 'CI/CD'],
+      category: 'Full-Stack Development',
+      skills: ['React', 'Node.js', 'Django', 'Flutter', 'HTML', 'CSS', 'JavaScript', 'REST APIs', 'Protobuf'],
     },
     {
       category: 'Databases & Caching',
       skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
     },
     {
-      category: 'Tools & Platforms',
-      skills: ['Git/GitHub', 'Jira', 'Microsoft Azure DevOps', 'Figma', 'Linux (Ubuntu)'],
+      category: 'DevOps & Cloud',
+      skills: ['Docker', 'Kubernetes', 'Google Cloud Platform', 'CI/CD'],
     },
     {
-      category: 'Full-Stack Development',
-      skills: ['React', 'Node.js', 'Django', 'Flutter', 'HTML', 'CSS', 'JavaScript', 'RESTful APIs', 'Protobuf'],
+      category: 'Tools & Platforms',
+      skills: ['Git/GitHub', 'Jira', 'Azure DevOps', 'Figma', 'Linux'],
     },
   ];
 
@@ -33,17 +33,29 @@ const About: React.FC = () => {
         <div className="about-content">
           <div className="about-text-container">
             <h2>About Me</h2>
+
             <p className="about-bio">
-              I am a Software Development Engineer at Indihood, with a B.Tech in Computer Science and Engineering from Sitare University (CGPA: 8.40). I have a strong foundation in full-stack development, scalable systems, and have completed internships at MeshWorks and Beans.ai.
+              I am a Software Engineer focused on building scalable systems,
+              intelligent automation tools, and data-driven applications. I
+              enjoy solving complex problems by designing reliable backends,
+              efficient APIs, and intuitive user interfaces.
             </p>
 
             <p className="about-bio">
-              I enjoy building robust APIs, automation tools, and user-focused applications. I am a continuous learner with experience across Dart, TypeScript, Python, and modern DevOps practices.
+              My work spans full-stack development, distributed systems, and
+              machine learning applications. I build products that handle large
+              datasets, automate workflows, and transform raw data into
+              meaningful insights for users and businesses.
             </p>
 
             <p className="about-bio highlight">
-              Open to collaboration and new opportunities. You can reach me at{' '}
-              <a href="mailto:nag2mani@gmail.com" className="accent-text">nag2mani@gmail.com</a>.
+              I enjoy working on challenging engineering problems from backend
+              architectures and APIs to intelligent systems powered by data and
+              AI. If you are building something interesting, feel free to reach
+              out at{' '}
+              <a href="mailto:nag2mani@gmail.com" className="accent-text">
+                nag2mani@gmail.com
+              </a>.
             </p>
 
             <div className="tabs-navigation">
@@ -53,23 +65,26 @@ const About: React.FC = () => {
               >
                 Skills
               </button>
+
               <button
-                className={`tab-btn ${activeTab === 'education' ? 'active' : ''}`}
-                onClick={() => setActiveTab('education')}
+                className={`tab-btn ${activeTab === 'experience' ? 'active' : ''}`}
+                onClick={() => setActiveTab('experience')}
               >
-                Education
+                Experience
               </button>
+
               <button
                 className={`tab-btn ${activeTab === 'achievements' ? 'active' : ''}`}
                 onClick={() => setActiveTab('achievements')}
               >
                 Achievements
               </button>
+
               <button
-                className={`tab-btn ${activeTab === 'extracurricular' ? 'active' : ''}`}
-                onClick={() => setActiveTab('extracurricular')}
+                className={`tab-btn ${activeTab === 'interests' ? 'active' : ''}`}
+                onClick={() => setActiveTab('interests')}
               >
-                Extracurricular
+                Interests
               </button>
             </div>
 
@@ -84,18 +99,33 @@ const About: React.FC = () => {
               </div>
             )}
 
-            {activeTab === 'education' && (
+            {activeTab === 'experience' && (
               <div className="education-content">
                 <div className="education-item">
-                  <h4>B.Tech in Computer Science and Engineering</h4>
-                  <p className="institution">Sitare University</p>
-                  <p className="year">Aug 2022 – May 2026 · CGPA: 8.40</p>
+                  <h4>Software Development Engineer</h4>
+                  <p className="institution">Indihood</p>
+                  <p className="year">
+                    Building scalable backend services, APIs, and infrastructure
+                    for production systems.
+                  </p>
                 </div>
+
                 <div className="education-item">
-                  <h4>Senior Secondary &amp; Foundation</h4>
-                  <p className="institution">Jawahar Navodaya Vidyalaya &amp; Dakshana Foundation</p>
-                  <p className="year">Jul 2015 – Mar 2022</p>
-                  <p className="year">10th: 94.4% · 12th: 91.6% · IIT JEE 2022: 96.5 Percentile</p>
+                  <h4>Frontend Developer Intern</h4>
+                  <p className="institution">MeshWorks</p>
+                  <p className="year">
+                    Developed frontend applications using Angular and
+                    TypeScript, focusing on performance and clean UI design.
+                  </p>
+                </div>
+
+                <div className="education-item">
+                  <h4>Backend Developer Intern</h4>
+                  <p className="institution">Beans.ai</p>
+                  <p className="year">
+                    Built backend services using Python and Django and worked
+                    with geospatial datasets for logistics applications.
+                  </p>
                 </div>
               </div>
             )}
@@ -103,39 +133,47 @@ const About: React.FC = () => {
             {activeTab === 'achievements' && (
               <div className="certifications-content">
                 <div className="achievement-card">
-                  Selected as a scholar at a premier residential school under the <strong>Ministry of Education, Government of India</strong>.
+                  Received <strong>Letters of Recommendation</strong> from
+                  startup founders and a <strong>Senior Vice President at Google</strong>.
                 </div>
+
                 <div className="achievement-card">
-                  Selected as a <strong>Dakshana Scholar</strong>, with full sponsorship for 2 years of IIT-JEE coaching at JNV Bengaluru Urban.
+                  Secured <strong>paid software engineering internships</strong>
+                  during early college years and received a full-time SDE offer
+                  before graduation.
                 </div>
+
                 <div className="achievement-card">
-                  Received Letters of Recommendation from startup founders and a <strong>Senior Vice President at Google</strong>.
+                  Built and launched multiple engineering projects spanning
+                  backend systems, machine learning platforms, and automation
+                  tools.
                 </div>
+
                 <div className="achievement-card">
-                  Secured paid SDE internships in 1st and 2nd years of college, and received a full-time SDE offer in third year.
-                </div>
-                <div className="achievement-card">
-                  Awarded a <strong>100% merit-based scholarship</strong> covering full tuition, accommodation, food, and living expenses for the four-year B.Tech in CSE at Sitare University.
+                  Created technical and career content reaching an audience of
+                  <strong>19K+ professionals on LinkedIn</strong>.
                 </div>
               </div>
             )}
 
-            {activeTab === 'extracurricular' && (
+            {activeTab === 'interests' && (
               <div className="extracurricular-content">
                 <div className="activity-card">
-                  <strong>Secretary of the Startup and Business Club</strong> at Sitare University.
+                  Write about startups, technology, and ideas for an audience of 
+                  <strong> 19K+ followers on LinkedIn</strong>.
                 </div>
+
                 <div className="activity-card">
-                  <strong>College Representative and Center Head</strong> for JDST/NDST under the Dakshana Foundation.
+                  Interested in <strong>AI systems, automation tools, and scalable product engineering</strong>.
                 </div>
+
                 <div className="activity-card">
-                  Create <strong>LinkedIn content</strong> on scholarships, internships, and finance, reaching an audience of <strong>19,000+</strong>.
+                  Regular <strong>marathon runner</strong> and track runs on Strava.
                 </div>
+
                 <div className="activity-card">
-                  <strong>Marathon running</strong> — regular runner; track runs on Strava.
-                </div>
-                <div className="activity-card">
-                  Read <strong>25+ books</strong> in college on business & finance, philosophy, and self-development.
+                  Read <strong>25+ books</strong> on business, philosophy, and
+                  technology.
                 </div>
               </div>
             )}

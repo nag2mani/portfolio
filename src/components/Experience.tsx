@@ -13,7 +13,7 @@ const Experience: React.FC = () => {
           <div className="experience-card">
             <div className="experience-header">
               <h3>Software Development Engineer</h3>
-              <span className="company">Indihood</span>
+              <span className="company">Indihood, Bengaluru, India</span>
               <span className="exp-date">Jun 2025 – Present</span>
             </div>
             <ul className="exp-points">
@@ -26,7 +26,7 @@ const Experience: React.FC = () => {
           <div className="experience-card">
             <div className="experience-header">
               <h3>Software Development Engineer Intern</h3>
-              <span className="company">MeshWorks</span>
+              <span className="company">MeshWorks, Ahmedabad, India</span>
               <span className="exp-date">Jun 2024 – Aug 2024</span>
             </div>
             <ul className="exp-points">
@@ -39,7 +39,7 @@ const Experience: React.FC = () => {
           <div className="experience-card">
             <div className="experience-header">
               <h3>Software Development Engineer Intern</h3>
-              <span className="company">Beans.ai</span>
+              <span className="company">Beans.ai, Palo Alto, USA</span>
               <span className="exp-date">Jun 2023 – Aug 2023</span>
             </div>
             <ul className="exp-points">
@@ -52,7 +52,7 @@ const Experience: React.FC = () => {
           <div className="experience-card">
             <div className="experience-header">
               <h3>Founder&apos;s Office Intern</h3>
-              <span className="company">Bengaluru-based Startup</span>
+              <span className="company">BuildFastWithAI, Bengaluru, India</span>
               <span className="exp-date">—</span>
             </div>
             <ul className="exp-points">
